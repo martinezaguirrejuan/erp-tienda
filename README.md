@@ -16,7 +16,7 @@ Sistema ERP para gestión de una tienda general. Construido con React, Node.js y
 |--------|--------|
 | Categorías | ✅ Completo |
 | Productos | ✅ Completo |
-| Clientes | 🔲 Pendiente |
+| Clientes | ✅ Completo |
 | Proveedores | 🔲 Pendiente |
 | Empleados | 🔲 Pendiente |
 | Compras | 🔲 Pendiente |
@@ -80,13 +80,16 @@ erp-tienda/
 │   ├── .env.example
 │   └── routes/
 │       ├── Categorias.js
-│       └── Productos.js
+│       ├── Productos.js
+│       └── Clientes.js
 └── frontend/
     └── src/
+        ├── main.jsx
         ├── App.jsx
         └── pages/
             ├── Categorias.jsx
-            └── Productos.jsx
+            ├── Productos.jsx
+            └── Clientes.jsx
 ```
 
 ## Base de datos
