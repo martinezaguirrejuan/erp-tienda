@@ -3,6 +3,8 @@ const cors = require('cors')
 const categoriasRouter = require('./routes/Categorias')
 const productosRouter = require('./routes/Productos')
 const clientesRouter = require('./routes/Clientes')
+const proveedoresRouter = require('./routes/Proveedores')
+const empleadosRouter = require('./routes/Empleados')
 
 const app = express()
 
@@ -11,7 +13,8 @@ app.use(express.json())
 app.use('/api/categorias', categoriasRouter)
 app.use('/api/productos', productosRouter)
 app.use('/api/clientes', clientesRouter)
-
+app.use('/api/proveedores', proveedoresRouter)
+app.use('/api/empleados', empleadosRouter)
 app.get('/', (req, res) => {
   res.send('Servidor ERP funcionando')
 })
